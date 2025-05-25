@@ -34,7 +34,7 @@ const AboutSection = () => {
             {/* Film strip title */}
             <div className="inline-block bg-gray-700 px-6 py-2 mb-8 relative">
               <h2 className="text-3xl font-bold text-white helvetica-style">
-                ОБО МНЕ
+                О КУРСЕ
               </h2>
               <div className="absolute -top-1 -bottom-1 left-0 right-0 border-t border-b border-dashed border-gray-500"></div>
             </div>
@@ -43,8 +43,12 @@ const AboutSection = () => {
               {/* Photo frame */}
               <div className="relative">
                 <div className="bg-gray-700 p-4 transform rotate-1 shadow-2xl">
-                  <div className="bg-gradient-to-br from-gray-600 to-gray-800 aspect-square rounded-lg flex items-center justify-center">
-                    <Icon name="User" size={120} className="text-gray-400" />
+                  <div className="bg-gradient-to-br from-gray-600 to-gray-800 aspect-square rounded-lg flex items-center justify-center overflow-hidden">
+                    <img
+                      src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=400&fit=crop"
+                      alt="Автор курса"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   {/* Photo corners */}
                   <div className="absolute top-1 left-1 w-6 h-6 border-l-4 border-t-4 border-gray-300"></div>
@@ -52,43 +56,53 @@ const AboutSection = () => {
                   <div className="absolute bottom-1 left-1 w-6 h-6 border-l-4 border-b-4 border-gray-300"></div>
                   <div className="absolute bottom-1 right-1 w-6 h-6 border-r-4 border-b-4 border-gray-300"></div>
                 </div>
+
+                {/* Film strip under photo */}
+                <div className="absolute -bottom-4 -right-4 bg-gray-600 px-4 py-2 transform rotate-3 shadow-lg">
+                  <span className="text-white text-sm font-mono">
+                    РЕЖИССЁР-КУРСА
+                  </span>
+                </div>
               </div>
 
-              {/* Content */}
+              {/* Course info */}
               <div className="text-left space-y-6">
-                <h3 className="text-2xl font-bold text-white mb-4">
-                  Создатель цифровых историй
-                </h3>
-
-                <p className="text-gray-300 leading-relaxed">
-                  Привет! Я — разработчик с страстью к созданию красивых и
-                  функциональных веб-приложений. Каждый проект для меня — это
-                  новая история, которую нужно рассказать через код.
-                </p>
+                <div className="space-y-4">
+                  <h3 className="text-2xl font-bold text-white mb-4">
+                    Александр Петров
+                  </h3>
+                  <p className="text-gray-300 leading-relaxed">
+                    5+ лет создания визуального контента для брендов и частных
+                    клиентов. Специализация — эстетичная съемка повседневности и
+                    lifestyle-контент.
+                  </p>
+                </div>
 
                 <div className="space-y-3">
-                  <div className="flex items-center gap-3 text-gray-300">
-                    <Icon name="Code" size={20} className="text-blue-400" />
-                    <span>5+ лет опыта в веб-разработке</span>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Video" size={20} className="text-primary" />
+                    <span className="text-gray-300">
+                      15+ часов практических уроков
+                    </span>
                   </div>
-                  <div className="flex items-center gap-3 text-gray-300">
-                    <Icon
-                      name="Palette"
-                      size={20}
-                      className="text-purple-400"
-                    />
-                    <span>Дизайн и пользовательский опыт</span>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Users" size={20} className="text-primary" />
+                    <span className="text-gray-300">
+                      500+ довольных учеников
+                    </span>
                   </div>
-                  <div className="flex items-center gap-3 text-gray-300">
-                    <Icon name="Rocket" size={20} className="text-green-400" />
-                    <span>Современные технологии</span>
+                  <div className="flex items-center gap-3">
+                    <Icon name="Award" size={20} className="text-primary" />
+                    <span className="text-gray-300">
+                      Сертификат по завершении
+                    </span>
                   </div>
                 </div>
 
-                {/* Film strip accent */}
-                <div className="border-t border-b border-dashed border-gray-600 py-4 mt-6">
-                  <p className="text-sm text-gray-400 italic">
-                    "Код — это поэзия в цифровом мире"
+                <div className="bg-gray-700 p-4 rounded-lg border-l-4 border-primary">
+                  <p className="text-gray-200 italic">
+                    "Красота скрыта в обычных моментах. Я научу вас её находить
+                    и показывать миру."
                   </p>
                 </div>
               </div>
