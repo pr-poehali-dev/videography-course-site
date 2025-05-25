@@ -82,6 +82,113 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Works Section */}
+      <section id="work" className="py-24 px-6">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="grid grid-cols-12 gap-8 mb-20">
+            <div className="col-span-12 md:col-span-4">
+              <h2 className="font-helvetica font-medium text-3xl md:text-4xl text-gray-900 tracking-tight">
+                РАБОТЫ
+              </h2>
+            </div>
+            <div className="col-span-12 md:col-span-8">
+              <p className="font-helvetica text-lg text-secondary leading-relaxed max-w-2xl">
+                Каждый проект — уникальная история. От повседневных моментов до
+                архитектурных форм в движении.
+              </p>
+            </div>
+          </div>
+
+          {/* Works Grid */}
+          <div className="space-y-24">
+            {/* Work 1 */}
+            <div className="grid grid-cols-12 gap-8 items-center">
+              <div className="col-span-12 md:col-span-8">
+                <div className="aspect-video bg-gray-100 relative overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1542038784456-1ea8e851b30d?w=800&h=450&fit=crop&crop=center"
+                    alt="Минималистичная архитектура в движении"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/20"></div>
+                </div>
+              </div>
+              <div className="col-span-12 md:col-span-4 space-y-6">
+                <div>
+                  <div className="text-xs font-helvetica text-secondary uppercase tracking-widest mb-2">
+                    01 / АРХИТЕКТУРА
+                  </div>
+                  <h3 className="font-helvetica font-medium text-xl text-gray-900">
+                    ГЕОМЕТРИЯ СВЕТА
+                  </h3>
+                </div>
+                <p className="font-helvetica text-secondary leading-relaxed">
+                  Исследование пространства через движение камеры. Архитектурные
+                  формы как живая скульптура.
+                </p>
+              </div>
+            </div>
+
+            {/* Work 2 */}
+            <div className="grid grid-cols-12 gap-8 items-center">
+              <div className="col-span-12 md:col-span-4 md:order-1 space-y-6">
+                <div>
+                  <div className="text-xs font-helvetica text-secondary uppercase tracking-widest mb-2">
+                    02 / ПОРТРЕТ
+                  </div>
+                  <h3 className="font-helvetica font-medium text-xl text-gray-900">
+                    ТИШИНА В КАДРЕ
+                  </h3>
+                </div>
+                <p className="font-helvetica text-secondary leading-relaxed">
+                  Человек в пространстве. Минимализм эмоций и максимум
+                  присутствия.
+                </p>
+              </div>
+              <div className="col-span-12 md:col-span-8 md:order-2">
+                <div className="aspect-video bg-gray-100 relative overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=450&fit=crop&crop=center"
+                    alt="Портретная видеосъемка в минималистичном стиле"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/10"></div>
+                </div>
+              </div>
+            </div>
+
+            {/* Work 3 */}
+            <div className="grid grid-cols-12 gap-8 items-center">
+              <div className="col-span-12 md:col-span-8">
+                <div className="aspect-video bg-gray-100 relative overflow-hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=450&fit=crop&crop=center"
+                    alt="Повседневные моменты через призму эстетики"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/15"></div>
+                </div>
+              </div>
+              <div className="col-span-12 md:col-span-4 space-y-6">
+                <div>
+                  <div className="text-xs font-helvetica text-secondary uppercase tracking-widest mb-2">
+                    03 / ПОВСЕДНЕВНОСТЬ
+                  </div>
+                  <h3 className="font-helvetica font-medium text-xl text-gray-900">
+                    КРАСОТА ПРОСТОГО
+                  </h3>
+                </div>
+                <p className="font-helvetica text-secondary leading-relaxed">
+                  Обычный день как произведение искусства. Находим эстетику в
+                  повседневных ритуалах.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
